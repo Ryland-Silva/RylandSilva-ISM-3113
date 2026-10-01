@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <meta name="description" content="A fan-made home for the speed, stories, and strategy of Formula 1." />
+    <title>APEX — Inside the Race</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Apex home"><span class="wordmark-mark">A</span>PEX<span class="wordmark-dot">.</span></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a class="nav-link active" href="#home">Home</a>
+          <a class="nav-link" href="#calendar">Race calendar</a>
+          <a class="nav-link" href="#paddock">The paddock</a>
+          <a class="nav-link" href="#story">Our sport</a>
+        </nav>
+        <a class="header-cta" href="#calendar">Explore the season <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero" id="home" aria-labelledby="hero-title">
+          <div class="hero-grain" aria-hidden="true"></div>
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="live-dot"></span> The world at full throttle</p>
+            <h1 id="hero-title">BUILT FOR<br /><span>THE</span> <span class="accent-word">APEX.</span></h1>
+            <p class="hero-description">The split-second calls. The impossible overtakes. The people who make speed a science. Get closer to every part of Formula 1.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#calendar">Follow the season <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#story"><span class="play-icon" aria-hidden="true">▶</span> Discover the sport</a>
+            </div>
+            <div class="hero-footnote"><span class="footnote-line"></span><span>THE ART OF GOING FASTER</span></div>
+          </div>
+          <div class="hero-art" aria-label="Illustration of a racing car on track" role="img">
+            <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+            <span class="hero-number">01</span>
+            <div class="speed-lines" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+            <svg class="racecar" viewBox="0 0 900 370" aria-hidden="true" focusable="false">
+              <defs>
+                <linearGradient id="body" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ff5148"/><stop offset=".55" stop-color="#dc171d"/><stop offset="1" stop-color="#861117"/></linearGradient>
+                <linearGradient id="wing" x1="0" x2="1"><stop stop-color="#f7f4ed"/><stop offset="1" stop-color="#aeb0b4"/></linearGradient>
+                <filter id="glow"><feGaussianBlur stdDeviation="13" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+              </defs>
+              <ellipse cx="454" cy="313" rx="339" ry="21" fill="#ee2029" opacity=".34" filter="url(#glow)"/>
+              <path d="M136 235 193 216l111-7 89-66 121-4 82 42 110 21 75 34-9 27H131z" fill="url(#body)" stroke="#ff6862" stroke-width="3"/>
+              <path d="m324 205 87-61 99-1 41 59-99 10-53 16-96 1z" fill="#111317" stroke="#f6f1e8" stroke-width="4"/>
+              <path d="m410 145 43-45 53 1 29 44z" fill="#e8e5df" opacity=".9"/>
+              <path d="m413 151 36-39h36v44z" fill="#30343a"/><path d="m492 112 14 1 24 34h-43z" fill="#30343a"/>
+              <path d="m189 216 119-7-36 31-158 5z" fill="#e6e2da"/><path d="m113 233 183 1-25 30H100z" fill="url(#wing)"/>
+              <path d="m603 192 113 8 68 29-123-7z" fill="#f22a32"/><path d="m716 214 100 4 26 16-124 3z" fill="url(#wing)"/>
+              <path d="m362 223 171-15 89 7 23 13-51 13-132 3-92-7z" fill="#f2eee7" opacity=".88"/>
+              <path d="m394 227 155-13 36 12-63 10-104-1z" fill="#24272c"/>
+              <path d="m447 111 15-3 2 42-15 2z" fill="#d81720"/><path d="m468 109 17 2 13 40-17-1z" fill="#d81720"/>
+              <path d="M265 240h389" stroke="#ffb4ac" stroke-width="3" opacity=".6"/>
+              <g fill="#101114" stroke="#74777d" stroke-width="8"><circle cx="272" cy="263" r="53"/><circle cx="654" cy="260" r="53"/></g>
+              <g fill="#d0d0ce"><circle cx="272" cy="263" r="26"/><circle cx="654" cy="260" r="26"/></g>
+              <g stroke="#494c52" stroke-width="5"><path d="M272 240v46M249 263h46m-39-16 32 32m0-32-32 32"/><path d="M654 237v46m-23-23h46m-39-16 32 32m0-32-32 32"/></g>
+              <path d="m359 235 36 1m194-17 40 8" stroke="#fff" stroke-width="5" opacity=".8"/>
+            </svg>
+            <div class="art-caption"><span class="caption-rule"></span><span>ENGINEERED TO THE LIMIT</span></div>
+          </div>
+          <div class="hero-index"><span>SCROLL TO EXPLORE</span><span class="index-bar"></span><span>01 / 04</span></div>
+        </section>
+
+        <section class="race-strip" aria-label="Next race feature">
+          <div class="race-strip-label"><span class="strip-icon">01</span><span>NEXT<br />RACE</span></div>
+          <div class="race-title"><p class="eyebrow">Round 19 <span class="tiny-divider">/</span> The Americas</p><h2>UNITED STATES <span>GRAND PRIX</span></h2></div>
+          <div class="race-location"><span class="location-pin" aria-hidden="true">⌖</span><div><strong>Circuit of The Americas</strong><small>Austin, Texas</small></div></div>
+          <div class="race-countdown" aria-label="Countdown to race weekend"><div><strong id="days">--</strong><small>DAYS</small></div><i>:</i><div><strong id="hours">--</strong><small>HRS</small></div><i>:</i><div><strong id="minutes">--</strong><small>MIN</small></div></div>
+          <a class="round-arrow" href="#calendar" aria-label="View race calendar">↗</a>
+        </section>
+
+        <section class="section calendar-section" id="calendar" aria-labelledby="calendar-title">
+          <div class="section-heading">
+            <div><p class="eyebrow section-kicker">Every lap writes a story</p><h2 id="calendar-title">THE <span>CALENDAR</span></h2></div>
+            <a class="section-link" href="#calendar-list">View all rounds <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="calendar-grid" id="calendar-list">
+            <article class="race-card race-card-featured">
+              <div class="card-topline"><span class="round-label">ROUND <b>19</b></span><span class="card-status"><i></i> UP NEXT</span></div>
+              <div class="track-graphic track-cota" aria-hidden="true"><svg viewBox="0 0 260 115"><path d="M27 74 38 36l35-13 10 16 32-17 21 15 45-20 22 12-7 21 29 20-14 18-46-9-20 21-32-9-24 9-25-21-28 5z"/></svg></div>
+              <div class="card-info"><div><p class="race-country">UNITED STATES</p><h3>Austin</h3></div><div class="card-date">23—25<br /><span>OCT</span></div></div>
+              <div class="card-bottom"><span>CIRCUIT OF THE AMERICAS</span><span>5.513 KM</span></div>
+            </article>
+            <article class="race-card">
+              <div class="card-topline"><span class="round-label">ROUND <b>20</b></span><span class="card-status muted">NIGHT RACE</span></div>
+              <div class="track-graphic track-mexico" aria-hidden="true"><svg viewBox="0 0 260 115"><path d="M31 55 44 31 84 25l21 19 27-19 39 8 7 19 35 4 15 23-26 20-36-12-19 12-24-18-38 10-19-20-37 6z"/></svg></div>
+              <div class="card-info"><div><p class="race-country">MEXICO</p><h3>Mexico City</h3></div><div class="card-date">30—01<br /><span>OCT / NOV</span></div></div>
+              <div class="card-bottom"><span>AUTÓDROMO HERMANOS RODRÍGUEZ</span><span>4.304 KM</span></div>
+            </article>
+            <article class="race-card">
+              <div class="card-topline"><span class="round-label">ROUND <b>21</b></span><span class="card-status muted">SPRINT WEEKEND</span></div>
+              <div class="track-graphic track-brazil" aria-hidden="true"><svg viewBox="0 0 260 115"><path d="m49 32 37-8 27 19 6 27 39 14 16-14 35 5 8 19-38 7-33-11-30 9-13-27-29-7z"/></svg></div>
+              <div class="card-info"><div><p class="race-country">BRAZIL</p><h3>São Paulo</h3></div><div class="card-date">06—08<br /><span>NOV</span></div></div>
+              <div class="card-bottom"><span>AUTÓDROMO JOSÉ CARLOS PACE</span><span>4.309 KM</span></div>
+            </article>
+          </div>
+          <p class="data-note">Season dates and race details shown as sample content.</p>
+        </section>
+
+        <section class="paddock-section" id="paddock" aria-labelledby="paddock-title">
+          <div class="paddock-copy"><p class="eyebrow section-kicker">Beyond the chequered flag</p><h2 id="paddock-title">THE PEOPLE<br />BEHIND THE <span>PACE.</span></h2><p>Drivers get the glory. But every tenth is earned by an entire team—engineers, strategists, mechanics, and the crew moving as one.</p><a class="button button-outline" href="#story">Step inside the paddock <span aria-hidden="true">↗</span></a></div>
+          <div class="paddock-feature"><div class="feature-number">02<span> / THE GRID</span></div><div class="feature-orbit" aria-hidden="true"><span></span><span></span><span></span><div class="feature-core">TEAM<br />WORK</div></div><div class="feature-caption"><span>01—20</span><span>ONE CREW. ONE CAR. EVERY SECOND COUNTS.</span></div></div>
+        </section>
+
+        <section class="story-section" id="story" aria-labelledby="story-title">
+          <div class="story-label"><span class="story-mark">A</span><span>MORE THAN<br />A RACE</span></div>
+          <div class="story-main"><p class="eyebrow">A sport unlike any other</p><h2 id="story-title">A THOUSANDTH<br />OF A SECOND.<br /><span>AN ETERNITY.</span></h2></div>
+          <div class="story-aside"><p>Twenty drivers. Ten teams. One championship where every detail matters—and the line between legendary and almost is thinner than ever.</p><a class="text-link" href="#home">Get to know F1 <span aria-hidden="true">↗</span></a></div>
+          <div class="story-decoration" aria-hidden="true">F1</div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark">A</span>PEX<span class="wordmark-dot">.</span></a><p>A fan-made celebration of the world’s fastest sport.</p><a href="#home" class="back-top">BACK TO TOP ↑</a><span class="footer-copy">© 2026 APEX FAN SITE</span></footer>
+    </div>
+  </body>
+</html>
